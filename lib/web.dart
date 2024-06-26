@@ -1,4 +1,4 @@
-/// Web-safe logger.
+/// Web-safe logger_test.
 library web;
 
 export 'src/ansi_color.dart';

@@ -1,38 +1,38 @@
 # Logger
 
-[![pub package](https://img.shields.io/pub/v/logger.svg?logo=dart&logoColor=00b9fc)](https://pub.dartlang.org/packages/logger)
-[![CI](https://img.shields.io/github/actions/workflow/status/SourceHorizon/logger/dart.yml?branch=main&logo=github-actions&logoColor=white)](https://github.com/SourceHorizon/logger/actions)
-[![Last Commits](https://img.shields.io/github/last-commit/SourceHorizon/logger?logo=git&logoColor=white)](https://github.com/SourceHorizon/logger/commits/main)
-[![Pull Requests](https://img.shields.io/github/issues-pr/SourceHorizon/logger?logo=github&logoColor=white)](https://github.com/SourceHorizon/logger/pulls)
-[![Code size](https://img.shields.io/github/languages/code-size/SourceHorizon/logger?logo=github&logoColor=white)](https://github.com/SourceHorizon/logger)
-[![License](https://img.shields.io/github/license/SourceHorizon/logger?logo=open-source-initiative&logoColor=green)](https://github.com/SourceHorizon/logger/blob/main/LICENSE)
+[![pub package](https://img.shields.io/pub/v/logger_test.svg?logo=dart&logoColor=00b9fc)](https://pub.dartlang.org/packages/logger_test)
+[![CI](https://img.shields.io/github/actions/workflow/status/SourceHorizon/logger_test/dart.yml?branch=main&logo=github-actions&logoColor=white)](https://github.com/SourceHorizon/logger_test/actions)
+[![Last Commits](https://img.shields.io/github/last-commit/SourceHorizon/logger_test?logo=git&logoColor=white)](https://github.com/SourceHorizon/logger_test/commits/main)
+[![Pull Requests](https://img.shields.io/github/issues-pr/SourceHorizon/logger_test?logo=github&logoColor=white)](https://github.com/SourceHorizon/logger_test/pulls)
+[![Code size](https://img.shields.io/github/languages/code-size/SourceHorizon/logger_test?logo=github&logoColor=white)](https://github.com/SourceHorizon/logger_test)
+[![License](https://img.shields.io/github/license/SourceHorizon/logger_test?logo=open-source-initiative&logoColor=green)](https://github.com/SourceHorizon/logger_test/blob/main/LICENSE)
 
-Small, easy to use and extensible logger which prints beautiful logs.<br>
-Inspired by [logger](https://github.com/orhanobut/logger) for Android.
+Small, easy to use and extensible logger_test which prints beautiful logs.<br>
+Inspired by [logger_test](https://github.com/orhanobut/logger_test) for Android.
 
 **Show some ❤️ and star the repo to support the project**
 
 ### Resources:
 
-- [Documentation](https://pub.dev/documentation/logger/latest/logger/logger-library.html)
-- [Pub Package](https://pub.dev/packages/logger)
-- [GitHub Repository](https://github.com/SourceHorizon/logger)
+- [Documentation](https://pub.dev/documentation/logger_test/latest/logger_test/logger_test-library.html)
+- [Pub Package](https://pub.dev/packages/logger_test)
+- [GitHub Repository](https://github.com/SourceHorizon/logger_test)
 
 ## Getting Started
 
 Just create an instance of `Logger` and start logging:
 
 ```dart
-var logger = Logger();
+var logger_test = Logger();
 
-logger.d("Logger is working!");
+logger_test.d("Logger is working!");
 ```
 
 Instead of a string message, you can also pass other objects like `List`, `Map` or `Set`.
 
 ## Output
 
-![](https://raw.githubusercontent.com/SourceHorizon/logger/main/art/screenshot.png)
+![](https://raw.githubusercontent.com/SourceHorizon/logger_test/main/art/screenshot.png)
 
 # Documentation
 
@@ -41,17 +41,17 @@ Instead of a string message, you can also pass other objects like `List`, `Map` 
 You can log with different levels:
 
 ```dart
-logger.t("Trace log");
+logger_test.t("Trace log");
 
-logger.d("Debug log");
+logger_test.d("Debug log");
 
-logger.i("Info log");
+logger_test.i("Info log");
 
-logger.w("Warning log");
+logger_test.w("Warning log");
 
-logger.e("Error log", error: 'Test Error');
+logger_test.e("Error log", error: 'Test Error');
 
-logger.f("What a fatal log", error: error, stackTrace: stackTrace);
+logger_test.f("What a fatal log", error: error, stackTrace: stackTrace);
 ```
 
 To show only specific log levels, you can set:
@@ -64,10 +64,10 @@ This hides all `trace`, `debug` and `info` log events.
 
 ## Options
 
-When creating a logger, you can pass some options:
+When creating a logger_test, you can pass some options:
 
 ```dart
-var logger = Logger(
+var logger_test = Logger(
   filter: null, // Use the default LogFilter (-> only log in debug mode)
   printer: PrettyPrinter(), // Use the PrettyPrinter to format and print log
   output: null, // Use the default LogOutput (-> send everything to console)
@@ -77,7 +77,7 @@ var logger = Logger(
 If you use the `PrettyPrinter`, there are more options:
 
 ```dart
-var logger = Logger(
+var logger_test = Logger(
   printer: PrettyPrinter(
       methodCount: 2, // Number of method calls to be displayed
       errorMethodCount: 8, // Number of method calls if stacktrace is provided
@@ -150,10 +150,10 @@ However, if you are using a JetBrains IDE (Android Studio, IntelliJ, etc.)
 you can make use of
 the [Grep Console Plugin](https://plugins.jetbrains.com/plugin/7125-grep-console)
 and the [`PrefixPrinter`](/lib/src/printers/prefix_printer.dart)
-decorator to achieve colored logs for any logger:
+decorator to achieve colored logs for any logger_test:
 
 ```dart
-var logger = Logger(
+var logger_test = Logger(
     printer: PrefixPrinter(PrettyPrinter(colors: false))
 );
 ```

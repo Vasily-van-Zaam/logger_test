@@ -1,8 +1,9 @@
 import 'log_event.dart';
 import 'log_level.dart';
 import 'logger.dart';
+// import 'logger_test.dart';
 
-/// An abstract filter of log messages.
+/// An abstract filter of log messages  .
 ///
 /// You can implement your own `LogFilter` or use [DevelopmentFilter].
 /// Every implementation should consider [Logger.level].

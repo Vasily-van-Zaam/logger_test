@@ -241,7 +241,7 @@ class AdvancedFileOutput extends LogOutput {
     try {
       _flushBuffer();
     } catch (e, s) {
-      print('Failed to flush buffer before closing the logger: $e');
+      print('Failed to flush buffer before closing the logger_test: $e');
       print(s);
     }
     await _closeSink();

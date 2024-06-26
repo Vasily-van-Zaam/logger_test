@@ -1,7 +1,7 @@
-name: logger
-description: Small, easy to use and extensible logger which prints beautiful logs.
+name: logger_test
+description: Small, easy to use and extensible logger_test which prints beautiful logs.
 version: 2.3.0
-repository: https://github.com/SourceHorizon/logger
+repository: https://github.com/SourceHorizon/logger_test
 
 topics:
 - cli

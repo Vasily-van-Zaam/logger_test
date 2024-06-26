@@ -12,7 +12,7 @@ typedef LogCallback = void Function(LogEvent event);
 
 typedef OutputCallback = void Function(OutputEvent event);
 
-/// Use instances of logger to send log messages to the [LogPrinter].
+/// Use instances of logger_test to send log messages to the [LogPrinter].
 class Logger {
   /// The current logging level of the app.
   ///
@@ -61,7 +61,7 @@ class Logger {
   }
 
   /// Future indicating if the initialization of the
-  /// logger components (filter, printer and output) has been finished.
+  /// logger_test components (filter, printer and output) has been finished.
   ///
   /// This is only necessary if your [LogFilter]/[LogPrinter]/[LogOutput]
   /// uses `async` in their `init` method.
@@ -206,7 +206,7 @@ class Logger {
     return !_active;
   }
 
-  /// Closes the logger and releases all resources.
+  /// Closes the logger_test and releases all resources.
   Future<void> close() async {
     _active = false;
     await _filter.destroy();

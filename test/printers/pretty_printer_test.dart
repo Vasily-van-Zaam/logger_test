@@ -1,4 +1,4 @@
-import 'package:logger/logger.dart';
+import 'package:logger_test/logger.dart';
 import 'package:test/test.dart';
 
 void main() {

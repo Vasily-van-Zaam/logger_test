@@ -1,4 +1,4 @@
-import 'package:logger/logger.dart';
+import 'package:logger_test/logger.dart';
 import 'package:test/test.dart';
 
 final realPrinter = SimplePrinter();
@@ -33,7 +33,7 @@ void main() {
     expect(printerA.latestEvent, equals(infoEvent));
   });
 
-  test('forwards logs to correct logger', () {
+  test('forwards logs to correct logger_test', () {
     hybridPrinter.log(debugEvent);
     hybridPrinter.log(errorEvent);
     hybridPrinter.log(warningEvent);

@@ -1,30 +1,30 @@
 ## 2.3.0
 
 - AdvancedFileOutput: Added file deletion option. Thanks to
-  @lomby92 ([#71](https://github.com/SourceHorizon/logger/pull/71)).
+  @lomby92 ([#71](https://github.com/SourceHorizon/logger_test/pull/71)).
 
 ## 2.2.0
 
 - Added AdvancedFileOutput. Thanks to
-  @pyciko ([#65](https://github.com/SourceHorizon/logger/pull/65)).
+  @pyciko ([#65](https://github.com/SourceHorizon/logger_test/pull/65)).
 - Added missing acknowledgments in README.
 
 ## 2.1.0
 
 - Improved README explanation about debug mode. Thanks to
-  @gkuga ([#57](https://github.com/SourceHorizon/logger/pull/57)).
-- Added web safe export. Fixes [#58](https://github.com/SourceHorizon/logger/issues/58).
-- Added `logger.init` to optionally await any `async` `init()` methods.
-  Fixes [#61](https://github.com/SourceHorizon/logger/issues/61).
+  @gkuga ([#57](https://github.com/SourceHorizon/logger_test/pull/57)).
+- Added web safe export. Fixes [#58](https://github.com/SourceHorizon/logger_test/issues/58).
+- Added `logger_test.init` to optionally await any `async` `init()` methods.
+  Fixes [#61](https://github.com/SourceHorizon/logger_test/issues/61).
 
 ## 2.0.2+1
 
-- Meta update: Updated repository links to https://github.com/SourceHorizon/logger.
+- Meta update: Updated repository links to https://github.com/SourceHorizon/logger_test.
 
 ## 2.0.2
 
 - Moved the default log level assignment to prevent weird lazy initialization bugs.
-  Mitigates [#38](https://github.com/SourceHorizon/logger/issues/38).
+  Mitigates [#38](https://github.com/SourceHorizon/logger_test/issues/38).
 
 ## 2.0.1
 
@@ -34,9 +34,9 @@
 
 - Fixed supported platforms list.
 - Removed reference to outdated `logger_flutter` project.
-  Thanks to @yangsfang ([#32](https://github.com/SourceHorizon/logger/pull/32)).
-- Added override capability for logger defaults.
-  Thanks to @yangsfang ([#34](https://github.com/SourceHorizon/logger/pull/34)).
+  Thanks to @yangsfang ([#32](https://github.com/SourceHorizon/logger_test/pull/32)).
+- Added override capability for logger_test defaults.
+  Thanks to @yangsfang ([#34](https://github.com/SourceHorizon/logger_test/pull/34)).
 - `Level.verbose`, `Level.wtf` and `Level.nothing` have been deprecated and are replaced
   by `Level.trace`, `Level.fatal` and `Level.off`.
   Additionally `Level.all` has been added.
@@ -54,11 +54,11 @@
   #### Migration:
     - Before:
       ```dart
-      logger.e("An error occurred!", error, stackTrace);
+      logger_test.e("An error occurred!", error, stackTrace);
       ```
     - After:
       ```dart
-      logger.e("An error occurred!", error: error, stackTrace: stackTrace);
+      logger_test.e("An error occurred!", error: error, stackTrace: stackTrace);
       ```
 - `init` and `close` methods of `LogFilter`, `LogOutput` and `LogPrinter` are now async along
   with `Logger.close()`.
@@ -75,7 +75,7 @@
 
 - Bumped upper SDK constraint to `<4.0.0`.
 - Added `excludePaths` to PrettyPrinter.
-  Thanks to @Stitch-Taotao ([#13](https://github.com/simc/logger/pull/13)).
+  Thanks to @Stitch-Taotao ([#13](https://github.com/simc/logger_test/pull/13)).
 - Removed background color for `Level.error` and `Level.wtf` to improve readability.
 - Improved PrettyPrinter documentation.
 - Corrected README notice about ANSI colors.
@@ -83,25 +83,25 @@
 ## 1.3.0
 
 - Fixed stackTrace count when using `stackTraceBeginIndex`.
-  Addresses [#114](https://github.com/simc/logger/issues/114).
-- Added proper FileOutput stub. Addresses [#94](https://github.com/simc/logger/issues/94).
-- Added `isClosed`. Addresses [#130](https://github.com/simc/logger/issues/130).
+  Addresses [#114](https://github.com/simc/logger_test/issues/114).
+- Added proper FileOutput stub. Addresses [#94](https://github.com/simc/logger_test/issues/94).
+- Added `isClosed`. Addresses [#130](https://github.com/simc/logger_test/issues/130).
 - Added `time` to LogEvent.
 - Added `error` handling to LogfmtPrinter.
 
 ## 1.2.2
 
 - Fixed conditional LogOutput export. Credits to
-  @ChristopheOosterlynck [#4](https://github.com/SourceHorizon/logger/pull/4).
+  @ChristopheOosterlynck [#4](https://github.com/SourceHorizon/logger_test/pull/4).
 
 ## 1.2.1
 
 - Reverted `${this}` interpolation and added linter
-  ignore. [#1](https://github.com/SourceHorizon/logger/issues/1)
+  ignore. [#1](https://github.com/SourceHorizon/logger_test/issues/1)
 
 ## 1.2.0
 
-- Added origin LogEvent to OutputEvent. Addresses [#133](https://github.com/simc/logger/pull/133).
+- Added origin LogEvent to OutputEvent. Addresses [#133](https://github.com/simc/logger_test/pull/133).
 - Re-added LogListener and OutputListener (Should restore compatibility with logger_flutter).
 - Replaced pedantic with lints.
 
@@ -185,4 +185,4 @@
 
 ## 0.4.0
 
-- First version of the new logger
+- First version of the new logger_test

@@ -1,6 +1,7 @@
-import 'package:logger/logger.dart';
+import 'package:logger_test/logger.dart';
+import 'package:logger_test/src/logger.dart';
 
-var logger = Logger(
+var logger_test = Logger(
   printer: PrettyPrinter(),
 );
 
@@ -15,13 +16,13 @@ void main() {
 }
 
 void demo() {
-  logger.d('Log message with 2 methods');
+  logger_test.d('Log message with 2 methods');
 
   loggerNoStack.i('Info message');
 
   loggerNoStack.w('Just a warning!');
 
-  logger.e('Error! Something bad happened', error: 'Test Error');
+  logger_test.e('Error! Something bad happened', error: 'Test Error');
 
   loggerNoStack.t({'key': 5, 'value': 'something'});
 
